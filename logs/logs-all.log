@@ -1,0 +1,13 @@
+{"message":"Service https://www.google.com/ working","level":"low","createdAt":"2025-09-25T16:27:50.443Z"}
+{"message":"Service https://www.google.com/ working","level":"low","createdAt":"2025-09-25T16:27:55.268Z"}
+{"message":"Service https://www.google.com/ working","level":"low","createdAt":"2025-09-25T16:28:00.281Z"}
+{"message":"Service https://www.google.com/ working","level":"low","createdAt":"2025-09-25T16:28:05.275Z"}
+{"message":"Service https://www.google.com/ working","level":"low","createdAt":"2025-09-25T16:28:10.273Z"}
+{"message":"Service https://www.google.com/ working","level":"low","createdAt":"2025-09-25T16:28:15.196Z"}
+{"message":"TypeError: fetch failed","level":"low","createdAt":"2025-09-25T16:29:30.115Z"}
+{"message":"TypeError: fetch failed","level":"low","createdAt":"2025-09-25T16:29:35.021Z"}
+{"message":"TypeError: fetch failed","level":"low","createdAt":"2025-09-25T16:29:40.010Z"}
+{"message":"TypeError: fetch failed","level":"high","createdAt":"2025-09-25T16:31:10.127Z"}
+{"message":"TypeError: fetch failed","level":"high","createdAt":"2025-09-25T16:31:15.010Z"}
+{"message":"http://localhost:3000/ is not ok. TypeError: fetch failed","level":"high","createdAt":"2025-09-25T16:33:25.106Z"}
+{"message":"http://localhost:3000/ is not ok. TypeError: fetch failed","level":"high","createdAt":"2025-09-25T16:33:30.014Z"}
