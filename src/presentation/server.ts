@@ -15,7 +15,13 @@ export class Server{
 
         //Mandar email
         //console.log(envs.MAILER_SECRET_KEY, envs.MAILER_EMAIL);
+        /*
         const emailService=new EmailService();
+        emailService.sendEmailWithFileSystemLogs(
+            ['ireneog_72@hotmail.es','ireneolgo1972@gmail.com']
+        );
+        */
+        /*
         emailService.sendEmail({
             to:'ireneog_72@hotmail.es',
             subject:'Logs de sistema',
@@ -25,7 +31,7 @@ export class Server{
             <p>Ver logs adjuntos</p>
             `
         });
-
+        */
         //CronService.createJob(
             //'*/5 * * * * *',
             //()=>{
