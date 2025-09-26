@@ -28,3 +28,6 @@
 {"message":"Service https://www.google.com/ working","level":"low","createdAt":"2025-09-25T21:49:55.163Z","origin":"check-service.ts"}
 {"message":"Service https://www.google.com/ working","level":"low","createdAt":"2025-09-25T21:50:00.187Z","origin":"check-service.ts"}
 {"message":"Service https://www.google.com/ working","level":"low","createdAt":"2025-09-25T21:50:05.171Z","origin":"check-service.ts"}
+{"message":"Email sent","level":"low","createdAt":"2025-09-25T23:31:46.960Z","origin":"email.service.ts"}
+{"message":"Log email sent","level":"low","createdAt":"2025-09-26T00:01:01.951Z","origin":"send-email-logs.ts"}
+{"message":"Log email sent","level":"low","createdAt":"2025-09-26T00:01:02.118Z","origin":"send-email-logs.ts"}

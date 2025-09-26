@@ -1,5 +1,6 @@
 import { envs } from "../config/plugins/envs.plugin";
 import { CheckService } from "../domain/use-cases/checks/check-service";
+import { SendEmailLogs } from "../domain/use-cases/email/send-email-logs";
 import { FileSystemDatasource } from "../infrastructure/datasources/file-system.datasource";
 import { LogRepositoryImpl } from "../infrastructure/repositories/log.repository.impl";
 import { CronService } from "./cron/cron-service";
@@ -9,18 +10,46 @@ const fileSystemLogRepository=new LogRepositoryImpl(
     new FileSystemDatasource()
 );
 
+const emailService=new EmailService();
+
 export class Server{
     public static start(){
         console.log('Server started...');
+        //Envía el email a través del caso de uso
+        /*
+        new SendEmailLogs(
+            emailService,
+            fileSystemLogRepository
+        ).execute(
+            ['ireneog_72@hotmail.es','ireneolgo1972@gmail.com']
+        );
+        */
 
-        //Mandar email
+        //const emailService=new EmailService();
+        //emailService.sendEmailWithFileSystemLogs(
+            //['ireneog_72@hotmail.es','ireneolgo1972@gmail.com']
+        //);
+
+        //Graba log de envío de email
         //console.log(envs.MAILER_SECRET_KEY, envs.MAILER_EMAIL);
+        /*
+        const emailService=new EmailService(
+            fileSystemLogRepository
+        );
+        emailService.sendEmailWithFileSystemLogs(
+            ['ireneog_72@hotmail.es','ireneolgo1972@gmail.com']
+        );
+        */
+
+        //Mandar email a dos cuentas con adjuntos
         /*
         const emailService=new EmailService();
         emailService.sendEmailWithFileSystemLogs(
             ['ireneog_72@hotmail.es','ireneolgo1972@gmail.com']
         );
         */
+
+        //Manda email a una cuenta
         /*
         emailService.sendEmail({
             to:'ireneog_72@hotmail.es',
@@ -32,6 +61,8 @@ export class Server{
             `
         });
         */
+       
+        //Graba logs del estado de la aplicación cada cinco segundos
         //CronService.createJob(
             //'*/5 * * * * *',
             //()=>{
