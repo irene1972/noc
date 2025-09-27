@@ -4,6 +4,8 @@ mongo/
 !src/data/mongo
 postgres/
 !src/data/postgres
+mongo-test/
+postgres-test/
 
 .DS_Store
 .env
