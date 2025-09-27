@@ -3,7 +3,7 @@ import { envs } from "../../../config/plugins/envs.plugin";
 import { MongoDatabase } from "../init";
 import { LogModel } from "./log.model";
 
-describe('log.model.test.ts',()=>{
+describe('log.model.ts',()=>{
 
     beforeAll(async()=>{
         await MongoDatabase.connect({
