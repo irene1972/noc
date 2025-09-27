@@ -1,9 +1,14 @@
 node_modules/
 logs/
 mongo/
+!src/data/mongo
+postgres/
+!src/data/postgres
 
 .DS_Store
 .env
 
 
 
+
+/src/generated/prisma
